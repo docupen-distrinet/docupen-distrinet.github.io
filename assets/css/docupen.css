@@ -9,8 +9,9 @@
     --surface: #f4f4f2;
     --border: #b9b9b3;
     --border-strong: #8b8b84;
-    --accent: #1f4e79;
-    --accent-soft: #e8eff5;
+    --accent: #00407a;
+    --accent-light: #52bdec;
+    --accent-soft: #e6f2fb;
     --link: #00478a;
     --link-visited: #4b2e83;
     --placeholder-bg: #fdf1cf;
@@ -29,7 +30,8 @@
         --surface: #1c1f24;
         --border: #3a3d42;
         --border-strong: #565b63;
-        --accent: #7fa8cf;
+        --accent: #6fb6e8;
+        --accent-light: #52bdec;
         --accent-soft: #1c2733;
         --link: #7ab6ff;
         --link-visited: #c6a8ff;
@@ -83,12 +85,26 @@ header, footer {
 }
 
 header {
+    background: linear-gradient(135deg, var(--accent-soft) 0%, var(--page-bg) 55%);
     border-top: 5px solid var(--accent);
-    border-bottom: 2px solid var(--border-strong);
+    border-bottom: 3px solid var(--accent-light);
 }
 
 footer {
     border-top: 3px solid var(--accent);
+}
+
+.header__logos {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.header__logo {
+    height: 2rem;
+    width: auto;
+    display: block;
 }
 
 h1 {
@@ -197,24 +213,18 @@ li {
 .team-card__head {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1rem;
     margin-bottom: 0.7rem;
 }
 
 .avatar {
     flex-shrink: 0;
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 3.75rem;
+    height: 3.75rem;
     border-radius: 50%;
-    border: 1px solid var(--accent);
-    background: var(--accent-soft);
-    color: var(--accent);
-    font-family: var(--mono);
-    font-size: 0.85rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: 3px solid var(--accent);
+    object-fit: cover;
+    display: block;
 }
 
 .team-card__name {
@@ -360,6 +370,28 @@ details.more li {
 .faq details > *:not(summary) {
     margin-top: 0.75rem;
     margin-bottom: 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.7em 1.6em;
+    background: var(--accent);
+    color: var(--page-bg);
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid var(--accent);
+    border-radius: 4px;
+    box-shadow: 5px 5px 0 var(--accent-light);
+}
+
+.btn:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 var(--accent-light);
+}
+
+.btn:visited {
+    color: var(--page-bg);
 }
 
 .placeholder {
