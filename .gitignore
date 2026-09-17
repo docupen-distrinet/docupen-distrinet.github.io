@@ -1,0 +1,8 @@
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Kept local only — not published to this public repo.
+CLAUDE.md
+CONTENT.md
