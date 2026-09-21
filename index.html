@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
 <title>DocuPen — The Role of Design Documentation in Supporting Web Application Penetration Testing</title>
 <meta name="description" content="DocuPen is a KU Leuven research study on how supporting documentation affects web application penetration testing. Participants receive a voucher.">
 <link rel="canonical" href="https://docupen-distrinet.github.io/">
@@ -10,6 +12,11 @@
 <meta property="og:description" content="DocuPen is a KU Leuven research study on how supporting documentation affects web application penetration testing. Participants receive a voucher.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://docupen-distrinet.github.io/">
+<meta property="og:image" content="https://docupen-distrinet.github.io/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DocuPen — KU Leuven and DistriNet">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="assets/css/docupen.css">
 </head>
 <body>
@@ -18,7 +25,7 @@
 <header>
     <div class="wrap">
         <div class="header__logos">
-            <img class="header__logo" src="assets/img/logo-kuleuven.png" alt="KU Leuven">
+            <img class="header__logo header__logo--kuleuven" src="assets/img/logo-kuleuven.png" alt="KU Leuven">
             <img class="header__logo" src="assets/img/logo-distrinet.png" alt="DistriNet">
         </div>
         <h1>DocuPen<span class="accent-dot">.</span></h1>
@@ -33,21 +40,40 @@
             <h2>Overview</h2>
 
             <h3>What this study is about</h3>
-            <p>DocuPen is a research project at KU Leuven studying how different forms of supporting
-            documentation and resources influence the effectiveness and efficiency of web application
-            penetration testing.</p>
+            <p><strong>DocuPen</strong> is a research project at <strong>KU Leuven</strong> studying how
+            different forms of supporting <strong>documentation and resources</strong> influence the
+            effectiveness and efficiency of <strong>web application penetration testing</strong>.
+            Findings will help improve the documentation, training materials, and practices available to
+            testers, developers, and students.</p>
             <p>If you take part, you will carry out a penetration test on a purpose-built web application
-            using our experimental platform. You will be given documentation describing the application
-            before you begin. The platform records your findings, timestamps, and your interaction with
-            the documentation provided. Short surveys before and after the session collect your
-            professional background and your impressions of the task.</p>
-            <p>Our aim is to understand how documentation can be designed to better support penetration
-            testing, and to improve the training materials and practices available to testers,
-            developers, and students.</p>
+            using our experimental platform, with documentation describing the application provided
+            before you begin. Short surveys before and after the session collect your professional
+            background and your impressions of the task. The platform records your findings, timestamps,
+            and your interaction with the documentation — see
+            <a href="#data-handling">"How your data is handled"</a> below.</p>
+
+            <div class="table-wrap">
+                <table>
+                    <caption class="visually-hidden">Key facts about the study</caption>
+                    <tbody>
+                        <tr><th scope="row">Time commitment</th><td>~3 hours, plus up to 1 hour optional
+                        <br><small>Not required to be one continuous sitting — see
+                        <a href="#participation-involves">What participation involves</a>.</small></td></tr>
+                        <tr><th scope="row">Format</th><td>Solo, remote</td></tr>
+                        <tr><th scope="row">Compensation</th><td>Amazon voucher, <span class="tag tag--accent">30 EUR</span></td></tr>
+                        <tr><th scope="row">Optional interview</th><td>Additional <span class="tag tag--accent">15 EUR</span> voucher</td></tr>
+                    </tbody>
+                </table>
+            </div>
 
             <h3>Who can take part</h3>
-            <p>Testers, professionals, engineers, researchers, or students with experience in web
-            application penetration testing.</p>
+            <p>You can take part if you are 18 or over and have some hands-on experience with web
+            application penetration testing. There is no minimum number of years or professional
+            requirement: professionals, engineers, researchers, and students are all welcome, as long as
+            you have done this kind of testing before.</p>
+            <p>Sessions are run remotely and individually. All materials and surveys are in English;
+            basic English is enough for the session itself. The optional follow-up interview requires
+            enough English to hold a conversation.</p>
 
             <h3>Compensation</h3>
             <p>Participants who complete the full study — the pre-experiment survey, the penetration
@@ -115,48 +141,68 @@
         <div class="wrap">
             <h2>Additional Information</h2>
 
-            <details>
+            <details id="participation-involves">
                 <summary>What participation involves</summary>
-                <p>One session of approximately <span class="tag">3 hours</span>, with optional parts
-                that can extend it by up to a further hour:</p>
-                <div class="table-wrap">
-                    <table>
-                        <caption class="visually-hidden">Session stages and approximate time</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">Stage</th>
-                                <th scope="col">Time</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Consent and pre-experiment survey</td><td><span class="tag">~15 minutes</span></td></tr>
-                            <tr><td>Introduction to the documentation and platform tutorial</td><td><span class="tag">~15 minutes</span></td></tr>
-                            <tr><td>Reviewing the documentation for your assigned application</td><td><span class="tag">~10–15 minutes</span></td></tr>
-                            <tr><td>Penetration testing task on one web application</td><td><span class="tag">~120 minutes, optionally extended by ~30 minutes</span></td></tr>
-                            <tr><td>Post-experiment survey and debrief</td><td><span class="tag">~15 minutes</span></td></tr>
-                            <tr><td>Optional follow-up interview</td><td><span class="tag">~30 minutes</span></td></tr>
-                        </tbody>
-                    </table>
+                <p>One session of approximately <span class="tag">3 hours</span> (remote, solo), with
+                optional parts that can extend it by up to a further hour:</p>
+
+                <ol class="steps">
+                    <li>
+                        <p class="step__title"><strong>Read the study introduction</strong> <span class="tag">~5 minutes</span></p>
+                        <p class="step__detail">Read the experiment procedure, which explains what you will be asked to do.</p>
+                    </li>
+                    <li>
+                        <p class="step__title"><strong>Review and provide informed consent</strong> <span class="tag">~5 minutes</span></p>
+                        <p class="step__detail">Review the informed consent form and give your consent before anything else begins.</p>
+                    </li>
+                    <li>
+                        <p class="step__title"><strong>Complete a short pre-experiment questionnaire</strong> <span class="tag">~5 minutes</span></p>
+                        <p class="step__detail">Covers your background, penetration testing experience, and familiarity with documentation.</p>
+                    </li>
+                    <li>
+                        <p class="step__title"><strong>Review the concept of documentation used in this study</strong> <span class="tag">~10 minutes</span></p>
+                        <p class="step__detail">A short introduction to the type of documentation available during the experiment.</p>
+                    </li>
+                    <li>
+                        <p class="step__title"><strong>Learn how to use the platform to conduct the study</strong> <span class="tag">~10 minutes</span></p>
+                        <p class="step__detail">A walkthrough of the platform — how to view the documents, reach the target application, and submit or update findings.</p>
+                    </li>
+                    <li>
+                        <p class="step__title"><strong>Review experimental design documents and take a few quizzes</strong> <span class="tag">~15 minutes</span></p>
+                        <p class="step__detail">Review the documentation for your assigned application, then answer a short multiple-choice questionnaire so we can confirm the material was understood.</p>
+                    </li>
+                    <li>
+                        <p class="step__title"><strong>Perform penetration testing on a web application and submit your findings</strong> <span class="tag">~120 minutes, optionally +30</span></p>
+                        <p class="step__detail">Carry out the penetration test on the assigned application, submitting findings through the platform as you go. You may choose to continue for around 30 minutes more.</p>
+                    </li>
+                    <li>
+                        <p class="step__title"><strong>Complete a short post-experiment questionnaire</strong> <span class="tag">~15 minutes</span></p>
+                        <p class="step__detail">Covers the usefulness of the documentation, your workload during the task, and your testing strategy.</p>
+                    </li>
+                    <li>
+                        <p class="step__title"><strong>Debriefing and thank you</strong> <span class="tag">~5 minutes</span></p>
+                        <p class="step__detail">Receive a debrief explaining the purpose of the study.</p>
+                    </li>
+                    <li>
+                        <p class="step__title"><strong>Optional interview</strong> <span class="tag">~30 minutes</span></p>
+                        <p class="step__detail">The option to take part in a follow-up interview, arranged for a separate time slot after the experiment.</p>
+                    </li>
+                </ol>
+
+                <div class="note">
+                    <p><strong>You don't need to do this in one straight 3-hour sitting.</strong></p>
+                    <ul>
+                        <li><strong>Steps 1–5</strong> can be completed at any time within
+                        <strong>48 hours</strong> of receiving your access credentials.</li>
+                        <li><strong>Steps 6–9</strong> unlock at your scheduled testing time. Only the
+                        <strong>penetration test itself (step 7, up to 120 minutes with the optional
+                        extension) needs to run as one continuous block</strong> — the rest doesn't have
+                        to be back-to-back with it.</li>
+                        <li><strong>Step 10</strong> (the optional interview) is arranged for a separate
+                        time slot after the experiment — it does not need to happen right away.</li>
+                    </ul>
                 </div>
-                <p>In more detail, you will:</p>
-                <ul>
-                    <li>Read the experiment procedure and the informed consent form, and give your consent
-                    before anything begins.</li>
-                    <li>Complete a pre-experiment survey covering your background, penetration testing
-                    experience, and familiarity with documentation.</li>
-                    <li>Receive a short introduction to the type of documentation available during the
-                    experiment, and a walkthrough of the platform — how to view the documents, reach the
-                    target application, and submit or update findings.</li>
-                    <li>Review the documentation for your assigned application, then answer a short
-                    multiple-choice questionnaire so we can confirm the material was understood.</li>
-                    <li>Carry out a 120-minute penetration test on the assigned application, submitting
-                    findings through the platform as you go. You may choose to continue for around 30
-                    minutes more.</li>
-                    <li>Complete a post-experiment survey on the usefulness of the documentation, your
-                    workload during the task, and your testing strategy.</li>
-                    <li>Receive a debrief explaining the purpose of the study, and the option to volunteer
-                    for a follow-up interview.</li>
-                </ul>
+
                 <p>The surveys ask about your professional background — years of web application
                 penetration testing experience, familiarity with particular documents, certifications —
                 and your impressions of the task. They do not ask sensitive or personal questions.</p>
@@ -166,7 +212,7 @@
                 sensitive data is exposed.</p>
             </details>
 
-            <details>
+            <details id="data-handling">
                 <summary>How your data is handled</summary>
                 <p>Your personal data is processed in line with the General Data Protection Regulation
                 (GDPR). Only data strictly necessary to achieve the research objectives is processed.
@@ -184,8 +230,6 @@
                 <p>If you take part in the optional follow-up interview, that interview is recorded in
                 audio and video. The recording is transcribed and pseudonymised, and the original
                 recording is deleted once the transcript has been verified.</p>
-                <p>Full details are in the participant information letter:</p>
-                <p class="placeholder">TO BE CONFIRMED — not for publication</p>
             </details>
 
             <details>
